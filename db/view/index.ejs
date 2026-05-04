@@ -1,0 +1,15 @@
+<%- include('partials/header') %>
+
+<h1>Welcome to Wildscape Park</h1>
+
+<section>
+  <% habitats.forEach(h => { %>
+    <div>
+      <h2><%= h.name %></h2>
+      <p><%= h.description %></p>
+      <a href="/habitats/<%= h.id %>">Explore</a>
+    </div>
+  <% }) %>
+</section>
+
+<%- include('partials/footer') %>

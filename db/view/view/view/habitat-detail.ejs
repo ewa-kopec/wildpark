@@ -1,0 +1,14 @@
+<%- include('partials/header') %>
+
+<h1><%= habitat.name %></h1>
+<p><%= habitat.description %></p>
+
+<h2>Exhibits</h2>
+<% exhibits.forEach(e => { %>
+  <div>
+    <h3><%= e.name %></h3>
+    <p><%= e.description %></p>
+  </div>
+<% }) %>
+
+<%- include('partials/footer') %>
